@@ -37,6 +37,8 @@ function askQuestion(graph, entry, relations = []) {
   const cloneRelations = relations.slice();
   const currRel = cloneRelations.shift();
   const optionalNodes = graph[currRel];
+
+  // we reached a dead end and cannot keep traversing.
   if (!optionalNodes) {
     return;
   }
@@ -53,7 +55,7 @@ function askQuestion(graph, entry, relations = []) {
       return node;
     }
 
-    // no nodes were found, this means that either the path was a dead end, and no edge exists.
+    // no nodes were found, this means that the path was a dead end, and no edge exists.
     continue;
   }
 }
