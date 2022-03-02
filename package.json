@@ -1,0 +1,14 @@
+{
+  "name": "graph-walk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ori Avraham",
+  "license": "ISC",
+  "dependencies": {
+    "fast-csv": "^4.3.6"
+  }
+}
